@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "Zxccxzxczxcxz XXX",
+  "applicationTitle": "Zxccxzxczxcxz XXX",
+  "items": [
+    {
+      "link": null,
+      "menuName": "zxccxzxczxcxz-x-x-x",
+      "caption": "ZxccxzxczxcxzXXX",
+      "title": "ZxccxzxczxcxzXXX",
+      "children": [
+        {
+          "link": "i-i-s-zxccxzxczxcxz-x-x-x-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zxccxzxczxcxz-x-x-x-расположение-l",
+          "menuName": null,
+          "caption": "Расположение",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zxccxzxczxcxz-x-x-x-сервер-l",
+          "menuName": null,
+          "caption": "Сервер",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zxccxzxczxcxz-x-x-x-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zxccxzxczxcxz-x-x-x-отчет-о-сервере-l",
+          "menuName": null,
+          "caption": "Отчет о сервере",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

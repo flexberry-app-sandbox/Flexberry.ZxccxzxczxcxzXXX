@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-zxccxzxczxcxz-x-x-x-сервер-e",
+  "editForm": "i-i-s-zxccxzxczxcxz-x-x-x-сервер-e",
+  "external": false,
+  "caption": "Сервер",
+  "name": "IISZxccxzxczxcxzXXXСерверL",
+  "className": "СерверL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zxccxzxczxcxz-x-x-x-сервер",
+      "modelProjection": "СерверL"
+    }
+  ]
+}

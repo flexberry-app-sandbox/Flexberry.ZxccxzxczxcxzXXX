@@ -1,0 +1,93 @@
+﻿{
+  "name": "IISZxccxzxczxcxzXXXНастройки",
+  "modelName": "i-i-s-zxccxzxczxcxz-x-x-x-настройки",
+  "className": "Настройки",
+  "nameSpace": "IIS.ZxccxzxczxcxzXXX",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаНачала",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаОкончания",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "описаний",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "типНастроек",
+      "type": "i-i-s-zxccxzxczxcxz-x-x-x-тип-настр",
+      "flexberryType": "ТипНастр",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сервер",
+      "relatedTo": "i-i-s-zxccxzxczxcxz-x-x-x-сервер",
+      "inverse": "настройки"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "НастройкиE",
+      "modelName": "i-i-s-zxccxzxczxcxz-x-x-x-настройки",
+      "attrs": [
+        {
+          "name": "типНастроек",
+          "caption": "Тип настроек",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОкончания",
+          "caption": "Дата окончания",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "описаний",
+          "caption": "Описаний",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

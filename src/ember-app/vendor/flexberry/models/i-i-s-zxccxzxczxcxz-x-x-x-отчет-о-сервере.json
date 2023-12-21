@@ -1,0 +1,155 @@
+﻿{
+  "name": "IISZxccxzxczxcxzXXXОтчетОСервере",
+  "modelName": "i-i-s-zxccxzxczxcxz-x-x-x-отчет-о-сервере",
+  "className": "ОтчетОСервере",
+  "nameSpace": "IIS.ZxccxzxczxcxzXXX",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "режим",
+      "type": "i-i-s-zxccxzxczxcxz-x-x-x-режим-сервера",
+      "flexberryType": "РежимСервера",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "расположение",
+      "relatedTo": "i-i-s-zxccxzxczxcxz-x-x-x-расположение",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сервер",
+      "relatedTo": "i-i-s-zxccxzxczxcxz-x-x-x-сервер",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОтчетОСервереE",
+      "modelName": "i-i-s-zxccxzxczxcxz-x-x-x-отчет-о-сервере",
+      "attrs": [
+        {
+          "name": "режим",
+          "caption": "Режим",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Адрес",
+          "lookupValueField": "адрес",
+          "relationName": "Расположение",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Расположение",
+          "name": "расположение",
+          "relatedTo": "i-i-s-zxccxzxczxcxz-x-x-x-расположение",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Протокол",
+          "lookupValueField": "протокол",
+          "relationName": "Сервер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "протокол",
+              "caption": "Протокол",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Сервер",
+          "name": "сервер",
+          "relatedTo": "i-i-s-zxccxzxczxcxz-x-x-x-сервер",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОтчетОСервереL",
+      "modelName": "i-i-s-zxccxzxczxcxz-x-x-x-отчет-о-сервере",
+      "attrs": [
+        {
+          "name": "режим",
+          "caption": "Режим",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Расположение",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Адрес",
+          "name": "расположение",
+          "relatedTo": "i-i-s-zxccxzxczxcxz-x-x-x-расположение",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сервер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "протокол",
+              "caption": "Протокол",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Протокол",
+          "name": "сервер",
+          "relatedTo": "i-i-s-zxccxzxczxcxz-x-x-x-сервер",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

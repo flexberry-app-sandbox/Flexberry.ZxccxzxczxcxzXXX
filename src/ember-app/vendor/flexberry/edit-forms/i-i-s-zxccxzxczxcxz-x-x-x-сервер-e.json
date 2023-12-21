@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Сервер",
+  "name": "IISZxccxzxczxcxzXXXСерверE",
+  "className": "СерверE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zxccxzxczxcxz-x-x-x-сервер",
+      "modelProjection": "СерверE"
+    }
+  ]
+}
